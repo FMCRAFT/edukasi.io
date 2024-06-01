@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Farel</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Header Start -->
+      <header>
+        <nav class="nav container">
+          <div class="tengah pembungkus">
+            <img src="assets/images/logo.png" alt="" />
+           <div class="teks">
+             <a>Muhammad</a>
+             <p>Farel</p>
+           </div>
+          </div>
+
+          <ul class="menu_items">
+            <img src="assets/images/times.svg" alt="timesicon" id="menu_toggle" />
+            <li><a href="#home" class="nav_link bi bi-house-door"> Home</a></li>
+            <li><a href="#about" class="nav_link bi bi-menu-button-wide"> About</a></li>
+            <li><a href="#" class="nav_link bi bi-book"> Postingan</a></li>
+            <li><a href="#" class="nav_link bi bi-telephone"> Contact</a></li>
+          </ul>
+          <!--img src="images/brs.svg" alt="timesicon" id="menu_toggle" /-->
+          <button class="button" alt="timesicon" id="menu_toggle">Menu</button>
+        </nav>
+      </header>
+      <!-- Header End -->
+
+      <!-- Hero Start -->
+      <section class="hero" id="home">
+        <div class="row container">
+          <div class="column">
+            <p>Hi! Welcome, I'm</p>
+            <h2>Muhammad Farel</h2>
+            <p>Saya adalah seorang Siswa Kelas 10 Jurusan TKJ,<br>Biasa dipangil EL.</p>
+            <div class="buttons">
+              <button class="btn">Read More</button>
+              <button class="btn">Contact Us</button>
+            </div>
+          </div>
+          <div class="column">
+            <img src="assets/images/laptop-mac.webp" alt="heroImg" class="hero_img" />
+          </div>
+        </div>
+      </section>
+      <!-- Hero End-->
+      <!-- about start -->
+      <section class="about" id="about">
+      <section class="container text-center">
+        <div data-aos="zoom-in-up" class="card">
+         <div class="card-body">
+          <p class="card-text mb-6">Website ini berisikian konten edukasi seputar teknologi. Tujuan dari website ini adalah berbagi pengetahuan yang pernah didapatkan secara pribadi dan berdasarkan apa yang pernah dialami, jika ada yang kurang tepat, anda bisa koreksi. Selain untuk berbagi, website ini juga digunakan untuk dokumentasi supaya ilmu yang pernah didapatkan tidak lupa. Dalam website ini tidak ada input data yang diperlukan, anda bebas membaca dan share ke orang lain.
+          </p>
+         </div>
+        </div>
+        <div class="row container">
+          <div class="column">
+            <h2>Kategori Postingan</h2>
+            <h3 class="info mt-5">INFORMATIKA</h3>
+            <p class="text placeholder-glow"><span class="placeholder col-12"></span>Kategori Informatika akan membahas seputar pemprograman dan software atau extension untuk mempermudah kita saat ngoding.</p>
+            <h3 class="info mt-5">MULTIMEDIA</h3>
+            <p class="text placeholder-glow"><span class="placeholder col-12"></span> Kategori Multimedia akan membahas tentang tutorial dalam menggunakan software editing video maupun 3D model.</p>
+          </div>
+        </div>
+      </section>
+      </section>
+      <!--Postingan -->
+<section data-aos="zoom-in-up" class="section mt-5" id="works">
+    <div class="container text-center">
+        <h2 class="section-title mb-6">Postingan Terbaru</h2>
+        <div class="pricing-wrapper">
+            <div class="pricing-card">
+                <div class="pricing-card-header">
+                    <img class="pricing-card-icon" src="assets/images/laptop-mac.webp" alt="icon1">
+                </div>
+                <div class="pricing-card-body">
+                    <h6 class="pricing-card-title">Portofolio Website</h6>
+                    <div class="pricing-card-list">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eligendi aliquam, tempora. Eveniet explicabo deserunt sapiente est aliquid ab velit error, voluptatem animi, esse magnam placeat consequatur hic porro blanditiis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section data-aos="zoom-in-up" class="section mt-5" id="works">
+    <div class="container text-center">
+        <div class="pricing-wrapper">
+            <div class="pricing-card">
+                <div class="pricing-card-header">
+                    <img class="pricing-card-icon" src="assets/images/laptop-mac.webp" alt="icon1">
+                </div>
+                <div class="pricing-card-body">
+                    <h6 class="pricing-card-title">Portofolio Website</h6>
+                    <div class="pricing-card-list">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eligendi aliquam, tempora. Eveniet explicabo deserunt sapiente est aliquid ab velit error, voluptatem animi, esse magnam placeat consequatur hic porro blanditiis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+            <footer class="sticky-footer bg-dark">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span class="footer">Copyright &copy; Muhammad Farel 2024</span>
+                    </div>
+                </div>
+            </footer>
+</section>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+      easing: 'ease-in-out-sine'
+      });
+    </script>
+    <script>
+      const header = document.querySelector("header");
+      const menuToggler = document.querySelectorAll("#menu_toggle");
+
+      menuToggler.forEach(toggler => {
+        toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+      });
+    </script>
+  </body>
+</html>
